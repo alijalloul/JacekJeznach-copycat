@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(29,29,29);
+
+    margin-bottom: 5000px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+
+#main-aside a{
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+
+    transition: 0.3s;
+}
+
+#main-aside a:hover{
+    color: rgb(10,240,205);
+}
+
+#main-aside{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 10%;
+
+    height: 100vh;
+
+    float: left;
+
+    background-color: #181818;
+}
+
+#main-header{
+    display: flex;
+    flex-direction: column;
+    
+
+    padding-top: 20px;
+    
+    width: 100%;
+    
+    background-color: black;
+}
+
+#main-header svg{
+    height: 72px;
+}
+
+#main-header h1{
+    color: white;
+
+    font-size: 25px;
+}
+
+#main-header h4{
+    padding: 20px;
+
+    color: rgb(190, 190, 190);
+
+    font-size: 12px;
+    font-weight: 100;
+}
+
+#main-nav{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+}
+
+#main-nav a{
+    border-top: 1px solid rgb(40, 40, 40);
+
+    padding: 15px 0;
+}#main-nav a:last-child{
+    border-bottom: 1px solid rgb(40, 40, 40);
+}
+
+.social-media{
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}

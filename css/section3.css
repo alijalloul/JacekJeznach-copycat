@@ -1,0 +1,17 @@
+#section3{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+#section3 .left{
+    width: 42%;
+}
+
+#section3 .left p{
+    margin-top: 20px;
+
+    color: white;
+}

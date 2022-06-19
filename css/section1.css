@@ -1,0 +1,167 @@
+#main-section{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 80px; 
+
+    float: right;
+    width: 90%;
+}
+
+#section1{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 80px;
+}
+
+.sound{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 120px;
+
+    margin: 20px;
+
+    right: 0;
+    top: 0;
+
+    z-index: 3;
+}
+.sound i{
+    font-size: 25px;
+    color: rgb(253,33,85);
+}
+.sound #sound-onoff-btn{
+    color: rgb(253,33,85);
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+}
+.sound h1{
+    color: white;
+    font-size: 18px;
+}
+
+#header1  h1{
+    color: white;
+    font-size: 100px;
+
+    line-height: 0.9em;
+    letter-spacing: -8px;
+}
+
+#section1 p{
+    padding-top: 20px;
+
+    font-size: 18px;
+    letter-spacing: 3px;
+
+    color: rgb(133, 133, 133);
+}
+
+.skewfill-btn{    
+    margin-top: 40px;
+    
+    height: 55px;
+    width: 250px;
+
+    font-size: 13px;
+    letter-spacing: 3px;
+
+    border: 1px solid rgb(10,240,205);
+}
+.skewfill-btn div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+}
+.skewfill-btn #BC{
+    position: absolute;
+
+    width: 0%;
+    height: 100%;
+    
+    left: -13px;
+
+    background-color: rgb(10,240,205);
+    transform: skew(-20deg);
+    transition: width 0.3s ease-in-out;
+
+    overflow: hidden;
+    z-index: 0;
+}
+.skewfill-btn div:hover > #BC{
+    width: 110%;
+}
+.skewfill-btn div:hover > h1{
+    color: black;
+}
+
+
+.skewfill-btn h1{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(10,240,205);;
+
+    z-index: 1;
+}
+
+.scroll-down-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.scroll-down{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 9%;
+    font-size: 10px;
+
+    transform: rotateZ(90deg);
+
+    color: rgb(253,253,253);
+}
+
+.scroll-down h1{
+    animation: scroll 0.5s linear infinite alternate-reverse;
+}
+.scroll-down i{
+    font-size: 15px;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(-7px);
+    }
+    100%{
+        transform: translateX(7px);
+    }
+}
+
+
+@media all and (max-width: 850px){
+    #main-aside{
+        display: none;
+    }
+    #main-section{
+        width: 100%;
+    }
+    .scroll-down{
+        margin-left: 0vw;
+    }
+}
